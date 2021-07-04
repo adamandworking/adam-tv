@@ -31,7 +31,7 @@ web/# testing
 web/coverage
 
 web/# production
-web/build
+# web/build
 
 web/# misc
 web/.DS_Store
