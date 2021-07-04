@@ -4,7 +4,7 @@ import "./App.css"
 import Header from "./components/Header"
 import MainContent from "./components/MainContent"
 
-const socket = io('http://localhost:4000')
+const socket = io('http://34.210.176.75:4000')
 function App() {
   return (
     <div className="h-screen flex flex-col">
