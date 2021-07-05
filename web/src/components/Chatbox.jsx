@@ -41,16 +41,16 @@ const Chatbox = ({ socket }) => {
   let usersList = users.map((user) => <li key={user}>{user}</li>)
 
   return (
-    <div className="h-full w-4/12 bg-gray-800 text-white p-8">
+    <div className="h-full w-full lg:w-4/12 bg-gray-800 text-white p-8">
       <div className="h-full flex flex-col justify-around">
         <div className="flex flex-col items-center justify-center">
-          <div className="border-8 rounded-full py-3 px-6 flex items-center justify-center text-2xl font-mono italic font-bold">
+          <div className="border-8 rounded-full py-3 px-6 flex items-center justify-center text-sm lg:text-2xl font-mono italic font-bold">
             Chatroom
           </div>
-          <div className="text-xl font-mono pt-4">
+          <div className="text-sm lg:text-2xl font-mono pt-4">
             There {usersList.length == 1 ? "is" : "are"} {usersList.length} {usersList.length == 1 ? "person" : "people"} in the room
           </div>
-          <div className="overscroll-contain rounded-3xl w-11/12 border h-96 m-8 p-4 overflow-x-auto" >
+          <div className="overscroll-contain rounded-3xl w-11/12 border h-32 lg:h-96 m-8 p-4 overflow-x-auto" >
             {
               chatLog.map(
                 (ele) => <div className="whitespace-pre-line">{ele}</div>

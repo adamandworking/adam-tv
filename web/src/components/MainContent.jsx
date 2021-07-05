@@ -4,7 +4,7 @@ import VideoWrapper from './VideoWrapper';
 
 const MainContent = ({socket}) => {
     return (
-        <div className=" h-full flex">
+        <div className=" h-full flex flex-col lg:flex-row">
             <VideoWrapper/>
             <Chatbox socket={socket}/>
         </div>
